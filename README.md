@@ -38,7 +38,7 @@ sudo ln -s /usr/local/cuda-9.0/ /usr/local/cuda
 export LD_LIBRARY_PATH=/usr/local/cuda-9.0/
 ```
 
-* Install anaconda if it's not available already, and create a new environment. You need to install a few things, namely, pytorch 1.0, torchvision (*from the layers branch, which has ROI pooling*), and allennlp.
+* Install [anaconda](https://www.anaconda.com/) if it's not available already, and create a new environment. You need to install a few things, namely, pytorch 1.0, torchvision (*from the layers branch, which has ROI pooling*), and allennlp.
 
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
@@ -60,12 +60,7 @@ python -m spacy download en_core_web_sm
 pip uninstall pillow && CC="cc -mavx2" pip install -U --force-reinstall pillow-simd
 ```
 
-* If you don't want to download from scratch, then download my checkpoint. 
-
-```
-wget https://s3-us-west-2.amazonaws.com/ai2-rowanz/r2c/flagship_answer/best.th -P models/saves/flagship_answer/
-wget https://s3-us-west-2.amazonaws.com/ai2-rowanz/r2c/flagship_rationale/best.th -P models/saves/flagship_rationale/
-```
+* If you don't want to download from scratch, then download my [checkpoint](https://drive.google.com/drive/folders/1ux9YG3sRmUVvsCt1nHwlB5Egw43NDsK1?usp=sharing).
 
 * That's it! Now to set up the environment, run `source activate hgl && export PYTHONPATH=/home/yuwj/code/hgl` (or wherever you have this directory).
 
