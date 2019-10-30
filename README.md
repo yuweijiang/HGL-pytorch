@@ -1,6 +1,6 @@
 # Heterogeneous Graph Learning for Visual Commonsense Reasoning (NeurlPS 2019)
 
-This repository contains data and PyTorch code for the paper [**Heterogeneous Graph Learning for Visual Commonsense Reasoning** (arxiv)](https://arxiv.org/abs/1811.10830).
+This repository contains data and PyTorch code for the paper [**Heterogeneous Graph Learning for Visual Commonsense Reasoning** (arxiv)](https://arxiv.org/abs/1910.11475).
 
 This repo should be ready to replicate my results from the paper. If you have any issues with getting it set up though, please file a github issue. Still, the paper is just an arxiv version, so there might be more updates in the future.
 
@@ -8,9 +8,9 @@ This repository contains trained models and PyTorch version code for the above p
 #### Bibtex
 
 ```
-@inproceedings{zellers2018vcr,
+@inproceedings{yu2019heterogeneous,
   title={Heterogeneous Graph Learning for Visual Commonsense Reasoning},
-  author={Zellers, Rowan and Bisk, Yonatan and Farhadi, Ali and Choi, Yejin},
+  author={Weijiang Yu and Jingwen Zhou and Weihao Yu and Xiaodan Liang and Nong Xiao},
   journal={Advances in Neural Information Processing Systems (NeurlPS)},
   year={2019}
 }
@@ -20,7 +20,7 @@ This repository contains trained models and PyTorch version code for the above p
 
 This repository is for the new task of [Visual Commonsense Reasoning](https://visualcommonsense.com). A model is given an image, objects, a question, and four answer choices. The model has to decide which answer choice is correct. Then, it's given four rationale choices, and it has to decide which of those is the best rationale that explains *why its answer is right*.
 
-In particular, I have code and checkpoints for the HGL model, as discussed in the [HGL paper](https://arxiv.org/abs/1811.10830).  Here's a diagram that explains what's going on:
+In particular, I have code and checkpoints for the HGL model, as discussed in the [HGL paper](https://arxiv.org/abs/1910.11475).  Here's a diagram that explains what's going on:
 
 We'll treat going from Q->A and QA->R as two separate tasks: in each, the model is given a 'query' (question, or question+answer) and 'response choices' (answer, or rationale). Essentially, we'll use BERT and detection regions to *ground* the words in the query, then *contextualize* the query with the response. We'll perform several steps of *reasoning* on top of a representation consisting of the response choice in question, the attended query, and the attended detection regions. See the paper for more details.
 
