@@ -10,8 +10,9 @@ This repository contains trained models and PyTorch version code for the above p
 ```
 @inproceedings{yu2019heterogeneous,
   title={Heterogeneous Graph Learning for Visual Commonsense Reasoning},
-  author={Weijiang Yu and Jingwen Zhou and Weihao Yu and Xiaodan Liang and Nong Xiao},
-  journal={Advances in Neural Information Processing Systems (NeurlPS)},
+  author={Yu, Weijiang and Zhou, Jingwen and Yu, Weihao and Liang, Xiaodan and Xiao, Nong},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2765--2775},
   year={2019}
 }
 ```
