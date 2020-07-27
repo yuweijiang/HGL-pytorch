@@ -1,6 +1,6 @@
 # Heterogeneous Graph Learning for Visual Commonsense Reasoning (NeurlPS 2019)
 
-This repository contains data and PyTorch code for the paper [**Heterogeneous Graph Learning for Visual Commonsense Reasoning** (arxiv)](https://arxiv.org/abs/1910.11475).
+This repository contains data and PyTorch code for the paper [**Heterogeneous Graph Learning for Visual Commonsense Reasoning** (arxiv)](https://arxiv.org/abs/1910.11475). We are currently not sharing the whole code, we will send a notification as soon as possible it is available again. We are sharing a simple implementation version of our paper here for research purposes, which can also achieve similar results of our paper.
 
 This repo should be ready to replicate my results from the paper. If you have any issues with getting it set up though, please file a github issue. Still, the paper is just an arxiv version, so there might be more updates in the future.
 
